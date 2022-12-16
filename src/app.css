@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /* almost black but more orangy black */
+    background-color: #1b1b1b;
+    color: #f9f9f9;
+}
+
+.punch-card {
+    grid-template-columns: repeat(80, minmax(0, 1fr));
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
+.punch {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+}
+
+.punched {
+    background-color: #1b1b1b;
+}
